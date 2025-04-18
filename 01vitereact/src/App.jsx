@@ -1,10 +1,15 @@
 
 
-function App() {
-  const [count, setCount] = useState(0)
+import Chai from "./chai"
 
+function App() {
+  const username = 'vansh angra'
   return (
-    <h1>Chai aur React with Vite | Vansh</h1>
+    <>
+      <Chai/>
+      <h1>Chai aur react {username}</h1>
+      <p> test para</p>
+   </>
   )
 }
 
