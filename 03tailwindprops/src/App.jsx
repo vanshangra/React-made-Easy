@@ -6,11 +6,18 @@ import Card from './components/Card'
 
 function App() {
   const [count, setCount] = useState(0)
+  let myObj = {
+    username: "vansh",
+    age: 19
+  }
+
+  let newArr = [1,3,4,5]
 
   return (
     <>
       <h1 className = 'bg-green-400 text-black p-4 rounded-xl mb-4'> Tailwind Test</h1>
-      <Card />
+      <Card username ="chai and codes" btnText="clickme"/>
+      <Card username = "vansh" btnText = "click" />
         
     </>
   )

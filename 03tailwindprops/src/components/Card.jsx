@@ -1,35 +1,55 @@
+// import React from 'react'
+
+// function Card({username}) {
+//   console.log(username);
+  
+//   return (
+//     <div className="max-w-xs p-6 rounded-md shadow-md bg-black">
+//         <img
+//           src="https://source.unsplash.com/300x300/?random"
+//           alt=""
+//           className="object-cover object-center w-full rounded-md h-72 bg-gray-500"
+//         />
+//         <div className="mt-6 mb-2">
+//           <span className="block text-sm font-medium font-mono tracking-widest uppercase text-indigo-400">
+//             Title
+//           </span>
+//           <h2 className="text-xl font-semibold tracking-wide">Lorem ipsum dolor</h2>
+//         </div>
+//         <p className="text-gray-300">
+//           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio tempora ipsum soluta
+//           amet
+//         </p>
+//       </div>
+//   )
+// }
+
+// export default Card
+
 import React from 'react'
 
-function Card() {
+function Card({username, btnText = "visit me"} ) {
+  console.log(username);
+  
   return (
-    <div className="flex flex-col rounded-xl  p-4"
-    style={{
-      border: '0.88px solid',
-
-      backdropFilter: 'saturate(180%) blur(14px)',
-      background: ' #ffffff0d',
-    }}
-  >
-    <div>
-      <img
-        src="https://res.cloudinary.com/ddcg0rzlo/image/upload/v1652470298/9StaF0UBJfih_df0248.gif"
-        alt="nft-gif"
-        width="400"
-        height="400"
-        className="rounded-xl"
-      />
-    </div>
-    <div className="flex flex-col  rounded-b-xl py-4 ">
-      <div className="flex justify-between">
-        <h1 className="font-RubikBold ">Bored ape nft accidental</h1>
-        <h1 className="font-bold font-RubikBold">Price</h1>
-      </div>
-      <div className="flex  justify-between font-mono">
-        <p>#345</p>
-        <p>0.01</p>
-      </div>
-    </div>
+    <div className="relative h-[400px] w-[300px] rounded-md ">
+  <img
+    src="https://images.unsplash.com/photo-1546961329-78bef0414d7c?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHVzZXJ8ZW58MHx8MHx8&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=60"
+    alt="AirMax Pro"
+    className="z-0 h-full w-full rounded-md object-cover"
+  />
+  <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
+  <div className="absolute bottom-4 left-4 text-left">
+    <h1 className="text-lg font-semibold text-white">{username}</h1>
+    <p className="mt-2 text-sm text-gray-300">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi,
+      debitis?
+    </p>
+    <button className="mt-2 inline-flex cursor-pointer items-center text-sm font-semibold text-white">
+      {btnText } →
+    </button>
   </div>
+</div>
   )
 }
 
