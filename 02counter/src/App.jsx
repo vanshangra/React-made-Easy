@@ -5,12 +5,14 @@ import './App.css'
 
 function App() {
 
-  let [counter, setCounter] = useState(5)
+  let [counter, setCounter] = useState(5) //send updates to ui in batches
 
   // let counter = 5
   const addValue = () => {
     // counter = counter+1 
-    setCounter(counter+1)
+    // if we take setCounter(counter+1) multiple times it will take itas batchas we are repeating same thing again and do it only once
+    setCounter(prevcounter => prevcounter +1)
+    setCounter(prevcounter => prevcounter + 1)
   }
 
   const removeValue = () => {

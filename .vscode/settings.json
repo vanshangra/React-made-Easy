@@ -1,3 +1,5 @@
 {
-    "livePreview.defaultPreviewPath": "/customReact/index.html"
+    "livePreview.defaultPreviewPath": "/customReact/index.html",
+    "tailwindCSS.emmetCompletions": true,
+    "tailwindcss-intellisense.trace.server": "verbose"
 }
