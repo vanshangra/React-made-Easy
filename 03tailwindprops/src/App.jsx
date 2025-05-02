@@ -8,7 +8,7 @@ function App() {
   const [count, setCount] = useState(0)
   let myObj = {
     username: "vansh",
-    age: 19
+    age: 19 
   }
 
   let newArr = [1,3,4,5]
